@@ -9,4 +9,4 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
-node_modules
+.node_modules
