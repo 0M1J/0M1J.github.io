@@ -6,10 +6,12 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
+  // afterBody: [Component.Recommendations(), Component.Backlinks()], // figure out custom components
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/0M1J",
+      Email: "mailto:omij@duck.com"
+      //  , 💼 [LinkedIn](https://www.linkedin.com/in/omij-mangukiya/)  , 🔬 [Google Scholar](https://scholar.google.com/citations?user=ViYe_AwAAAAJ&hl=en&oi=ao)  
     },
   }),
 }
@@ -41,7 +43,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    // Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
